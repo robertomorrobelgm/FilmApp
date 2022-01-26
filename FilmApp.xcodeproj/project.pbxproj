@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		206BE96D279F996200AB8D8B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206BE96C279F996200AB8D8B /* Constants.swift */; };
 		20910B882798DE8800C51991 /* FilmAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20910B872798DE8800C51991 /* FilmAppApp.swift */; };
 		20910B8A2798DE8800C51991 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20910B892798DE8800C51991 /* ContentView.swift */; };
 		20910B8C2798DE8A00C51991 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20910B8B2798DE8A00C51991 /* Assets.xcassets */; };
 		20910B8F2798DE8B00C51991 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20910B8E2798DE8B00C51991 /* Preview Assets.xcassets */; };
 		20910B9A2798DE8B00C51991 /* FilmAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20910B992798DE8B00C51991 /* FilmAppTests.swift */; };
 		20910BA52798DE8B00C51991 /* FilmAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20910BA42798DE8B00C51991 /* FilmAppUITests.swift */; };
+		20910BBA2798E0D600C51991 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20910BB92798E0D500C51991 /* Film.swift */; };
+		20910BC22798F75500C51991 /* FilmListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20910BC12798F75500C51991 /* FilmListView.swift */; };
+		20910BC72798F7EA00C51991 /* FilmDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20910BC62798F7EA00C51991 /* FilmDetailView.swift */; };
+		20910BCC2798F91800C51991 /* FilmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20910BCB2798F91800C51991 /* FilmViewModel.swift */; };
+		20F23D98279FC7A000CC1FD1 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F23D97279FC7A000CC1FD1 /* Tools.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		206BE96C279F996200AB8D8B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		20910B842798DE8800C51991 /* FilmApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilmApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20910B872798DE8800C51991 /* FilmAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmAppApp.swift; sourceTree = "<group>"; };
 		20910B892798DE8800C51991 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +52,11 @@
 		20910BA02798DE8B00C51991 /* FilmAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FilmAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20910BA42798DE8B00C51991 /* FilmAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmAppUITests.swift; sourceTree = "<group>"; };
 		20910BA62798DE8B00C51991 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20910BB92798E0D500C51991 /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
+		20910BC12798F75500C51991 /* FilmListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmListView.swift; sourceTree = "<group>"; };
+		20910BC62798F7EA00C51991 /* FilmDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailView.swift; sourceTree = "<group>"; };
+		20910BCB2798F91800C51991 /* FilmViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmViewModel.swift; sourceTree = "<group>"; };
+		20F23D97279FC7A000CC1FD1 /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +107,10 @@
 		20910B862798DE8800C51991 /* FilmApp */ = {
 			isa = PBXGroup;
 			children = (
+				20910BB72798E04800C51991 /* ViewModels */,
+				20910BB62798E03700C51991 /* Views */,
+				20910BB52798DF2800C51991 /* Models */,
+				20910BB82798E05F00C51991 /* Utilities */,
 				20910B872798DE8800C51991 /* FilmAppApp.swift */,
 				20910B892798DE8800C51991 /* ContentView.swift */,
 				20910B8B2798DE8A00C51991 /* Assets.xcassets */,
@@ -128,6 +144,40 @@
 				20910BA62798DE8B00C51991 /* Info.plist */,
 			);
 			path = FilmAppUITests;
+			sourceTree = "<group>";
+		};
+		20910BB52798DF2800C51991 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				20910BB92798E0D500C51991 /* Film.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		20910BB62798E03700C51991 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				20910BC12798F75500C51991 /* FilmListView.swift */,
+				20910BC62798F7EA00C51991 /* FilmDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		20910BB72798E04800C51991 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				20910BCB2798F91800C51991 /* FilmViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		20910BB82798E05F00C51991 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				206BE96C279F996200AB8D8B /* Constants.swift */,
+				20F23D97279FC7A000CC1FD1 /* Tools.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +309,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20910BC22798F75500C51991 /* FilmListView.swift in Sources */,
 				20910B8A2798DE8800C51991 /* ContentView.swift in Sources */,
+				20910BCC2798F91800C51991 /* FilmViewModel.swift in Sources */,
+				20910BBA2798E0D600C51991 /* Film.swift in Sources */,
+				20910BC72798F7EA00C51991 /* FilmDetailView.swift in Sources */,
+				20F23D98279FC7A000CC1FD1 /* Tools.swift in Sources */,
 				20910B882798DE8800C51991 /* FilmAppApp.swift in Sources */,
+				206BE96D279F996200AB8D8B /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

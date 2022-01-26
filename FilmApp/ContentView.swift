@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  FilmApp
 //
-//  Created by Roberto Morrobel (ClaroDom) on 1/19/22.
+//  Created by Roberto Morrobel on 1/19/22.
 //
 
 import SwiftUI
@@ -14,8 +14,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+/*struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
-}
+}*/

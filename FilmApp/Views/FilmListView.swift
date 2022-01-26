@@ -14,7 +14,7 @@ struct FilmListView: View {
     var body: some View{
         NavigationView {
             List(viewModel.films, id: \.self ){ item in
-                NavigationLink(destination: FilmView(film: item, modelView: viewModel)) {
+                NavigationLink(destination: FilmDetailView(film: item, modelView: viewModel)) {
                     HStack {
                         //Logo image
                         Image(uiImage: Tools.createImage(film: item))

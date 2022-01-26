@@ -20,7 +20,7 @@ struct FilmDetailView: View{
     var body: some View{
         ScrollView {
             VStack(alignment: .leading, spacing:16){
-                
+                //Banner image
                 HStack{
                     Image(uiImage: Tools.createImage(film: film))
                         .resizable()
@@ -29,6 +29,7 @@ struct FilmDetailView: View{
                     Spacer()
                 }
                 
+                //Rating and viewCounter
                 HStack{
                     Text("Visitas: " + String( (film.viewCounter ?? 0) + 1))
                         
@@ -38,6 +39,7 @@ struct FilmDetailView: View{
                         .foregroundColor(.blue)
                 }
                 
+                //Sinopsis
                 Text("Sinopsis")
                     .bold()
                 
