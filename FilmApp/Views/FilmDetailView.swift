@@ -45,7 +45,7 @@ struct FilmDetailView: View{
                 
                 Text(film.overview ?? "")
                     .font(.system(size: 16, weight: Font.Weight.light, design: Font.Design.rounded))
-                    .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
+                    .fixedSize(horizontal: false, vertical: true)
                 
                 Spacer()
             }.padding()
